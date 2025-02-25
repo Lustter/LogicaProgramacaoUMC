@@ -1,0 +1,51 @@
+h1 {
+    font-size: 32px;
+    color: rgba(255, 0, 0, 0.774);
+    background-color: rgba(222, 184, 135, 0.068);
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    color: rgba(255, 166, 0, 0.438);
+    background-color: rgba(222, 184, 135, 0.192);
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: rgba(0, 14, 139, 0.438);
+    background-color: rgba(222, 184, 135, 0.158);
+    text-align: justify;
+}
+
+#primeiro {
+    font-size: 18px;
+    color: rgba(0, 0, 255, 0.527);
+    background-color: rgba(250, 235, 215, 0.342);
+    text-align: center;
+}
+
+
+#segundo{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(252, 196, 112, 0.849);
+    text-align: right;
+}
+
+#quarto {
+    font-size: 20px;
+    color: rgba(102, 9, 9, 0.548);
+    background-color: rgba(33, 75, 61, 0.664);
+    text-align: left;
+}
+
+
+#paragrafo {
+    font-size: 20px;
+    color: black;
+    background-color: rgba(252, 196, 112, 0.849);
+    text-align: center;
+}
+

@@ -1,0 +1,35 @@
+body {
+    width: 50vw;
+    margin: auto;
+}
+
+
+h1 {
+    background-color: lightblue;
+    color: rgb(9, 9, 71);
+    text-align: center;
+
+}
+
+h2 {
+    background-color: rgba(243, 146, 0, 0.199);
+    color: rgb(63, 11, 63);
+    text-align: center;
+
+}
+
+p {
+    background-color: bisque;
+    color: rgba(83, 0, 0, 0.705);
+    text-align: justify;
+}
+
+.paragrafo1 {
+    font-size: 17px;
+    text-align: justify;
+    color: rgb(65, 5, 5);
+    background-color: bisque;
+}
+
+
+

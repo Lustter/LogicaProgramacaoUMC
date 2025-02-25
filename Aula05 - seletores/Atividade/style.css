@@ -1,0 +1,71 @@
+body{
+    width: 50vw;
+    margin: auto;
+}
+
+#destinos{
+    text-align: center;
+    color: #222f3d;
+    background-color: #ecf0f1;
+    font-size: 34px;
+}
+
+
+.paris, .roma, .kyoto {
+    font-size: 26px;
+    color: #eb4331;
+    background-color: #f9ebea;
+}
+
+
+#maravilhas{
+    font-size: 34px;
+    color: #1c9b51;
+    background-color: #e9f7ef;
+    text-align: center;
+}
+
+
+.grand-canyon, .amazonia, .great-barrier-reef {
+    font-size: 26px;
+    color: #25a159;
+    background-color: #e9f7ef;
+}
+
+
+#cidades{
+    font-size: 34px;
+    color: #d68d16;
+    background-color: #fff3e6;
+    text-align: center;
+}
+
+
+.nova-york, .barcelona, .bangkok {
+    font-size: 26px;
+    color: #e69616;
+    background-color: #fff3e6;
+}
+
+
+#experiencias{
+    font-size: 34px;
+    color: #823f9e;
+    background-color: #f5e6f5;
+    text-align: center;
+}
+
+
+.jerusalem, .marrakech, .veneza {
+    font-size: 26px;
+    color: #7c3c97;
+    background-color: #f5e6f5;
+}
+
+
+p {
+    font-size:  16px;
+    color: #1e2f41;
+    text-align: justify;
+    line-height: 1.5;
+}
