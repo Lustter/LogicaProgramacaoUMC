@@ -19,7 +19,7 @@
 
     <main>
         <section id="containerSection">
-            <form action="verificarNota.php" method="post">
+            <form action="atualizarNota.php" method="post">
                 <select name="curso" id="curso" class="estilo">
                 <option value="ads">Análise e Desenvolvimento de Sistemas</option>
                 <option value="engenharia_software">Engenharia de Software</option>
@@ -56,35 +56,40 @@
                         $resultado = $stmt->get_result();
 
                         if ($resultado->num_rows > 0) {
-                        echo"
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <td>ID</td>
-                                        <td>Nome</td>
-                                        <td>Sobrenome</td>
-                                        <td>Nota Atividade</td>
-                                        <td>Nota Prova</td>
-                                        <td>Nota final</td>
-                                    </tr>
-                                </thead>
-                                <tbody> ";
-                                    while($row = $resultado->fetch_assoc()){
-                                        echo "
-                                            <tr>
-                                                <td>{$row['ID']}</td>
-                                                <td>{$row['NOME']}</td>
-                                                <td>{$row['SOBRENOME']}</td>
-                                                <td>{$row['NOTA_ATIVIDADE']}</td>
-                                                <td>{$row['NOTA_PROVA']}</td>
-                                                <td>{$row['NOTA_FINAL']}</td>
-                                            </tr> ";
-                                        }
-                            echo "
-                                    </tbody>
-                                </table>
-                            ";
-                                   
+                            echo"
+                            <form action='processaNota.php' method = 'post' id = 'form-nota'>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nome</th>
+                                            <th>Sobrenome</th>
+                                            <th>Nota Atividade</th>
+                                            <th>Nota Prova</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> ";
+                                        while($row = $resultado->fetch_assoc()){
+                                            echo "
+                                                <tr>
+                                                    <td>{$row['ID']}</td>
+                                                    <td>{$row['NOME']}</td>
+                                                    <td>{$row['SOBRENOME']}</td>
+                                                    <td>
+                                                        <input type='number' name='nota_atividade[{$row['ID']}]' step='1' required> 
+                                                    </td>
+                                                    <td>
+                                                        <input type='number' name='nota_prova[{$row['ID']}]' step='1' required>
+                                                    </td>
+                                                </tr> ";
+                                            }
+                                echo "
+                                        </tbody>
+                                    </table>
+                                "; 
+                            echo 
+                                "<input type='submit' value='Enviar'>
+                                </from>";
                         } else{
                             echo "<div class = 'mensagem erro'> Curso $curso não possui usuários</div>";
                         }
